@@ -1,0 +1,21 @@
+<div class="block md:flex">
+    <div class="w-screen h-screen md:w-1/5">
+        <div class="flex-col p-6 gap-10 text-center h-screen day1">
+            <button (click)="flip()"><a routerLink="../hday1" class="text-white p-2 bg-slate-500 px-10">Day-1</a></button>
+
+            <div class="{{data}} mt-4">
+                <a routerLink="./htmlAssi1" class="no-underline  bg-gray-200 text-black px-3 p-2">Assignment 1</a>
+            </div>
+            <div class="{{data}} mt-4">
+                <a routerLink="./htmlAssi2" class="no-underline  bg-gray-200 text-black px-3 p-2">Assignment 2</a>
+            </div>
+        </div>
+    </div>
+    <div class="w-full md:w-4/5 p-2 opt">
+        <div class="flex">
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="block md:flex">
+    <div class="w-screen h-screen md:w-1/5 day1">
+        <div class="flex-col p-6 text-center">
+            <button  routerLink="../cday1" class="text-white p-2 bg-slate-500 px-10">Day-1</button>
+        </div>
+        <div class="flex-col text-center">
+            <button  routerLink="../cday2" (click)="flip()" class="text-white p-2 bg-slate-500 px-10">Day-2</button>
+
+            <div class="{{data}} mt-4">
+                <a routerLink="./cssAssi1" class="no-underline  bg-gray-200 text-black px-3 p-2">Assignment 1</a>
+            </div>
+            <div class="{{data}} mt-4">
+                <a routerLink="./cssAssi2" class="no-underline  bg-gray-200 text-black px-3 p-2">Assignment 2</a>
+            </div>
+            <div class="{{data}} mt-4">
+                <a routerLink="./cssAssi3" class="no-underline  bg-gray-200 text-black px-3 p-2">Assignment 3</a>
+            </div>
+            <div class="{{data}} mt-4">
+                <a routerLink="./cssAssi4" class="no-underline  bg-gray-200 text-black px-3 p-2">Assignment 4</a>
+            </div>
+            <div class="{{data}} mt-4">
+                <a routerLink="./cssAssi5" class="no-underline  bg-gray-200 text-black px-3 p-2">Assignment 5</a>
+            </div>
+            <div class="{{data}} mt-4">
+                <a routerLink="./cssAssi6" class="no-underline  bg-gray-200 text-black px-3 p-2">Assignment 6</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="w-full md:w-4/5 p-2 opt">
+        <div class="flex">
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
